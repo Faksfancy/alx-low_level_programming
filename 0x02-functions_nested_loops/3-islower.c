@@ -2,7 +2,7 @@
 
 /**
  * _islower - check the code.
- *
+ * @c: The character to check
  * Return: 1 if lower, 0 otherwise
 */
 
