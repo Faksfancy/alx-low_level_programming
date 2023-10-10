@@ -29,7 +29,7 @@ void times_table(void)
 
 			if (pT == 0 && n > 0)
 			{
-				_purchar(' ');
+				_putchar(' ');
 			}
 			else if (n > 0)
 			{
@@ -40,7 +40,7 @@ void times_table(void)
 			{
 				break;
 			}
-			_putchar(',');
+		_putchar(',');
 			_putchar(' ');
 			n++;
 		}
