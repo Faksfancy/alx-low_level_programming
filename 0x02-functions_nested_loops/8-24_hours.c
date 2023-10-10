@@ -26,7 +26,7 @@ void jack_bauer(void)
 				mO = 0;
 				while (mO <= 9)
 				{
-					_putchar(ht + '0');
+					_putchar(hT + '0');
 
 					_putchar(hO + '0');
 
