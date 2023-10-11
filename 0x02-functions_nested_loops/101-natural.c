@@ -12,7 +12,7 @@ int main(void)
 
 	int i = 0;
 
-	int sum = 0
+	int sum = 0;
 
 	for (i = 0; i < limit; i++)
 	{
@@ -21,6 +21,6 @@ int main(void)
 			sum += i;
 		}
 	}
-	printf("%d\n");
+	printf("%d\n", sum);
 	return (0);
 }
