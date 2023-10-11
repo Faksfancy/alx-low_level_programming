@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_to_98 - check the code
@@ -18,5 +19,5 @@ void print_to_98(int n)
 		printf(", ");
 		(n > 98) ? n-- : n++;
 	}
-	putchar('\n')
+	putchar('\n');
 }
