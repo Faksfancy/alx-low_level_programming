@@ -10,14 +10,14 @@ int main(void)
 {
 	int n = 98;
 
-	int a = 1, b = 2, c, i;
+	long long a = 1, b = 2, c, i;
 
-	printf("%d, %d", a, b);
+	printf("%lld, %lld", a, b);
 
 	for (i = 3; i <= n; i++)
 	{
 		c = a + b;
-		printf(", %d", c);
+		printf(", %lld", c);
 		a = b;
 		b = c;
 	}
