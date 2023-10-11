@@ -20,7 +20,7 @@ void print_times_table(int n)
 	}
 	else
 	{
-		while (i <= n)
+		while (i < n)
 		{
 			n = 0;
 			lT = 0;
