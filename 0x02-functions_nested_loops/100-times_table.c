@@ -8,7 +8,7 @@
 
 void print_times_table(int n)
 {
-	int i, j;
+	int i, j, s;
 
 	if (n < 0 || n > 15)
 	{
@@ -24,14 +24,12 @@ void print_times_table(int n)
 		temp_max /= 10;
 	}
 
-	for (int i = 0; i <= n; i++)
+	for (i = 0; i <= n; i++)
 	{
-		for (int j = 0; j <= n; j++)
+		for (j = 0; j <= n; j++)
 		{
 			int result = i * j;
-
 			int digits = 0;
-
 			int temp_result = result;
 
 			while (temp_result > 0)
@@ -41,30 +39,30 @@ void print_times_table(int n)
 			}
 			int spaces = max_digits - digits;
 
-			for (int s = 0; s < spaces; s++)
+			for (s = 0; s < spaces; s++)
 			{
-				putchar(' ');
+				_putchar(' ');
 			}
 
 			if (j > 0)
 			{
-				putchar(',');
-				putchar(' ');
+				_putchar(',');
+				_putchar(' ');
 			}
 
 			if (result < 10)
 			{
-				putchar('0' + result);
+				_putchar('0' + result);
 			}
 			else
 			{
 				while (result > 0)
 				{
-					putchar('0' + result % 10);
+					_putchar('0' + result % 10);
 					result /= 10;
 				}
 			}
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
