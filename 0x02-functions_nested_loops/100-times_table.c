@@ -25,7 +25,7 @@ void print_times_table(int n)
 			n = 0;
 			lT = 0;
 
-			while (n < 16)
+			while (n <= i)
 			{
 				lT = n * i;
 
@@ -42,7 +42,7 @@ void print_times_table(int n)
 					_putchar(pT + '0');
 				}
 				_putchar(pO + '0');
-				if (n == 15)
+				if (n == i)
 				{
 					break;
 				}
