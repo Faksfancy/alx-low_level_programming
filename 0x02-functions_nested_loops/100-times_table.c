@@ -8,11 +8,9 @@
 
 void print_times_table(int n)
 {
-	int i, pT, pO, lT;
+	int i, j;
 
-	i = 0;
-	pT = 0;
-	pO = 0;
+	int result;
 
 	if (n < 0 || n > 15)
 	{
@@ -20,38 +18,20 @@ void print_times_table(int n)
 	}
 	else
 	{
-		while (i < 16)
+		for (i = 0; i <= n; i++)
 		{
-			n = 0;
-			lT = 0;
-
-			while (n < 16)
+			for (j = 0; j <= n; j++)
 			{
-				lT = n * i;
+				result = i * j;
+				_putchar(result + '0');
 
-				pO = lT % 10;
-
-				pT = (lT - pO) / 10;
-
-				if (pT == 0 && n > 0)
+				if (j < n)
 				{
+					_putchar(',');
 					_putchar(' ');
 				}
-				else if (n > 0)
-				{
-					_putchar(pT + '0');
-				}
-				_putchar(pO + '0');
-				if (n == i)
-				{
-					break;
-				}
-				_putchar(',');
-				_putchar(' ');
-				n++;
 			}
 			_putchar('\n');
-			i++;
 		}
 	}
 
