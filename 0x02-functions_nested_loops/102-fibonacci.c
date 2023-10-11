@@ -24,7 +24,7 @@ int main(void)
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%.0lf", fib[i]);
+		printf("%u", (unsigned int)fib[i]);
 		if (i < n - 1)
 		{
 			printf(", ");
