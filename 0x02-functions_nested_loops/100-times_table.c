@@ -8,64 +8,51 @@
 
 void print_times_table(int n)
 {
-	int i, j, s;
-	int max_result, max_digits, temp_max, temp_result;
-	int spaces;
+	int i, n, pT, pO, lT;
+
+	i = 0;
+	pT = 0;
+	pO = 0;
 
 	if (n < 0 || n > 15)
 	{
 		return;
 	}
-	max_result = n * n;
-	max_digits = 0;
-	temp_max = max_result;
-
-	while (temp_max > 0)
+	else
 	{
-		max_digits++;
-		temp_max /= 10;
-	}
-
-	for (i = 0; i <= n; i++)
-	{
-		for (j = 0; j <= n; j++)
+		while (i < 16)
 		{
-			int result = i * j;
-			int digits = 0;
+			n = 0;
+			lT = 0;
 
-			temp_result = result;
-
-			while (temp_result > 0)
+			while (n < 16)
 			{
-				digits++;
-				temp_result /= 10;
-			}
-			spaces = max_digits - digits;
+				lT = n * i;
 
-			for (s = 0; s < spaces; s++)
-			{
-				_putchar(' ');
-			}
+				pO = lT % 10;
 
-			if (j > 0)
-			{
+				pT = (lT - pO) / 10;
+
+				if (pT == 0 && n > 0)
+				{
+					_putchar(' ');
+				}
+				else if (n > 0)
+				{
+					_putchar(pT + '0');
+				}
+				_putchar(pO + '0');
+				if (n == 15)
+				{
+					break;
+				}
 				_putchar(',');
 				_putchar(' ');
+				n++;
 			}
-
-			if (result < 10)
-			{
-				_putchar('0' + result);
-			}
-			else
-			{
-				while (result > 0)
-				{
-					_putchar('0' + result % 10);
-					result /= 10;
-				}
-			}
+			_putchar('\n');
+			i++;
 		}
-		_putchar('\n');
 	}
+
 }
