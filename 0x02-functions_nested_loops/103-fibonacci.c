@@ -6,7 +6,7 @@
  * Return: Always 0.
 */
 
-int main()
+int main(void)
 {
 	int limit = 4000000;
 
@@ -14,7 +14,7 @@ int main()
 
 	int next;
 
-	while (b <= limit) 
+	while (b <= limit)
 	{
 		if (b % 2 == 0)
 		{
@@ -27,5 +27,5 @@ int main()
 
 	printf("%d\n", sum);
 
-	return 0;
+	return (0);
 }
