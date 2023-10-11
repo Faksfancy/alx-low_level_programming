@@ -12,7 +12,7 @@ int main(void)
 
 	int i;
 
-	unsigned int fib[50];
+	double fib[50];
 
 	fib[0] = 1;
 	fib[1] = 2;
@@ -24,7 +24,7 @@ int main(void)
 
 	for (i = 0; i < n; i++)
 	{
-		printf("%u", fib[i]);
+		printf("%.0lf", fib[i]);
 		if (i < n - 1)
 		{
 			printf(", ");
