@@ -8,7 +8,7 @@
 
 void print_times_table(int n)
 {
-	int i, n, pT, pO, lT;
+	int i, pT, pO, lT;
 
 	i = 0;
 	pT = 0;
