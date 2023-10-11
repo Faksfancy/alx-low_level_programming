@@ -9,14 +9,15 @@
 void print_times_table(int n)
 {
 	int i, j, s;
+	int max_result, max_digits, temp_max, temp_result;
 
 	if (n < 0 || n > 15)
 	{
 		return;
 	}
-	int max_result = n * n;
-	int max_digits = 0;
-	int temp_max = max_result;
+	max_result = n * n;
+	max_digits = 0;
+	temp_max = max_result;
 
 	while (temp_max > 0)
 	{
@@ -30,7 +31,8 @@ void print_times_table(int n)
 		{
 			int result = i * j;
 			int digits = 0;
-			int temp_result = result;
+
+			temp_result = result;
 
 			while (temp_result > 0)
 			{
