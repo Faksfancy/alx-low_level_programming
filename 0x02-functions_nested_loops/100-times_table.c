@@ -20,12 +20,12 @@ void print_times_table(int n)
 	}
 	else
 	{
-		while (i < n)
+		while (i < 16)
 		{
 			n = 0;
 			lT = 0;
 
-			while (n < i)
+			while (n < 16)
 			{
 				lT = n * i;
 
