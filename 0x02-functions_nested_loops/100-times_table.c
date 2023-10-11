@@ -10,6 +10,7 @@ void print_times_table(int n)
 {
 	int i, j, s;
 	int max_result, max_digits, temp_max, temp_result;
+	int spaces;
 
 	if (n < 0 || n > 15)
 	{
@@ -39,7 +40,7 @@ void print_times_table(int n)
 				digits++;
 				temp_result /= 10;
 			}
-			int spaces = max_digits - digits;
+			spaces = max_digits - digits;
 
 			for (s = 0; s < spaces; s++)
 			{
