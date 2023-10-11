@@ -8,28 +8,21 @@
 
 int main(void)
 {
-	int n = 50;
+	long i = 0;
+	long j = 1;
+	int n = 0;
+	long fib;
 
-	int i;
-
-	double fib[50];
-
-	fib[0] = 1;
-	fib[1] = 2;
-
-	for (i = 2; i < n; i++)
+	while (n < 50)
 	{
-		fib[i] = fib[i - 1] + fib[i - 2];
+		fib = j + i;
+		if (n != 49)
+			printf("%ld, ", fib);
+		else
+			printf("%ld\n", fib);
+		i = j;
+		j = fib;
+		n += 1;
 	}
-
-	for (i = 0; i < n; i++)
-	{
-		printf("%u", (unsigned int)fib[i]);
-		if (i < n - 1)
-		{
-			printf(", ");
-		}
-	}
-	printf("\n");
 	return (0);
 }
