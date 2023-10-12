@@ -8,7 +8,7 @@
 
 void print_line(int n)
 {
-	int i = 0;
+	int i;
 
 	if (n <= 0)
 	{
@@ -20,6 +20,6 @@ void print_line(int n)
 		{
 			_putchar('_');
 		}
-		_putchar('\n')
+		_putchar('\n');
 	}
 }
