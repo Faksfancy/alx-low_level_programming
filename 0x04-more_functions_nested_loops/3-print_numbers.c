@@ -9,13 +9,9 @@ void print_numbers(void)
 {
 	int n;
 
-	if (n >= '48' && n <= '57')
+	for (n = 48; n < 58; n++)
 	{
 		_putchar(n);
-		_putchar('\n');
 	}
-	else
-	{
-		return (0);
-	}
+	_putchar('\n');
 }
