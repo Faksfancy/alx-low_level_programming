@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdio.h>
 
 /**
  * main - check the code
@@ -9,6 +10,12 @@
 int main(void)
 {
 	int i;
+
+	char f[] = "Fizz";
+
+	char b[] = "Buzz";
+
+	char fb[] = "FizzBuzz";
 
 	for (i = 1; i <= 100; i++)
 	{
@@ -28,7 +35,14 @@ int main(void)
 		{
 			printf("%d", i);
 		}
-		putchar(' ');
+		if (i == 100)
+		{
+			putchar('');
+		}
+		else
+		{
+			putchar(' ');
+		}
 	}
 	printf("\n");
 	return (0);
